@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kilometro 0 | Contacto</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/styles.css">
+    
 </head>
 <body>
     
-    <header>
-        <h1>Kilometro 0</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./paquetes.html">Paquetes</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+    <header class="site-header">
+        <h1 class="brand"><a href="../index.html">Kilometro 0</a></h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="./destinos.html">Destinos</a></li>
+                <li><a class="nav-link" href="./paquetes.html">Paquetes</a></li>
+                <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="nav-link" href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,20 +39,20 @@
 
         <section>
             <h2>Formulario de consulta</h2>
-            <form action="#" method="post">
-            <label for="nombre">Nombre completo</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+            <form class="contact-form" action="#" method="post">
+                <label for="nombre">Nombre completo</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
 
-            <label for="email">Correo electrónico</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
-            <label for="destino">Destino de interés</label><br>
-            <input type="text" id="destino" name="destino"><br><br>
+                <label for="destino">Destino de interés</label><br>
+                <input type="text" id="destino" name="destino"><br><br>
 
-            <label for="mensaje">Mensaje</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5"></textarea><br><br>
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea><br><br>
 
-            <button type="submit">Enviar consulta</button>
+                <button class="btn" type="submit">Enviar consulta</button>
             </form>
         </section>
 
@@ -59,6 +66,15 @@
         </section>
 
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Kilometro  0. Todos los derechos reservados</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/es/">TikTok</a></li>
+            <li><a href="https://x.com/?lang=es">Twitter</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>

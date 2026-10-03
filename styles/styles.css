@@ -1,0 +1,148 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #F1EFE6;
+    color: #53443D
+}
+
+a{
+    color: #53443D;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #53443D;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    color: #AD7556;
+}
+
+p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.site-header{
+    background-color: #53443D;
+    color: #F1EFE6;
+}
+
+.site-header .brand{
+    color: #F1EFE6;
+}
+
+.site-header .brand a{
+    color: #F1EFE6;
+    text-decoration: none;
+}
+
+.nav-link{
+    color: #F1EFE6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #DCCFB8;
+    text-decoration: none;
+}
+
+.hero{
+    text-align: center;
+    background-color: #F1EFE6;
+}
+
+.hero h2{
+    color: #AD7556;
+}
+
+.benefits-list li{
+    background-color: #DCCFB8;
+    color: #53443D;
+    font-weight: 600;
+}
+
+.card{
+    background-color: #F1EFE6;
+}
+
+.card h3{
+    color: #AD7556;
+}
+
+.card ul li{
+    color: #53443D;
+}
+
+.feature-figure{
+    text-align: center;
+}
+
+.feature-figure figcaption{
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #AD7556;
+    text-align: center;
+}
+
+.contact-form label{
+    font-weight: 600;
+    color: #53443D;
+}
+
+.contact-form input, .contact-form textarea{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    background-color: #F1EFE6;
+    color: #53443D;
+}
+
+.btn{
+    background-color: #53443D;
+    color: #F1EFE6;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #F1EFE6;
+    color: #53443D;
+}
+
+
+.site-footer{
+    background-color: #53443D;
+    color: #F1EFE6;
+    text-align: center;
+}
+
+.social-links a{
+    color: #DCCFB8;
+    font-weight: 600;
+}
+
+.social-links a:hover{
+    color: #F1EFE6;
+    text-decoration: underline;
+}
