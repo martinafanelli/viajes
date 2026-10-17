@@ -1,3 +1,11 @@
+/* Reset universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base del documento */
 body{
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
@@ -16,6 +24,7 @@ ul{
     list-style: none;
 }
 
+/* Jerarquía tipográfica */
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -41,7 +50,12 @@ p{
     font-size: 1rem;
 }
 
+/* Header y marca */
 .site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
     background-color: #53443D;
     color: #F1EFE6;
 }
@@ -55,6 +69,13 @@ p{
     text-decoration: none;
 }
 
+/* Navegación */
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .nav-link{
     color: #F1EFE6;
     font-weight: 600;
@@ -66,23 +87,48 @@ p{
     text-decoration: none;
 }
 
+/* Layout principal */
+.site-main{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 30px 20px;
+}
+
+/* Sección hero */
 .hero{
     text-align: center;
     background-color: #F1EFE6;
+    padding: 20px;
 }
 
 .hero h2{
     color: #AD7556;
 }
 
+/* Lista de beneficios */
+.benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
 .benefits-list li{
     background-color: #DCCFB8;
     color: #53443D;
     font-weight: 600;
+    padding: 20px;
 }
 
+/* Tarjetas */
 .card{
     background-color: #F1EFE6;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 20px;
 }
 
 .card h3{
@@ -93,6 +139,7 @@ p{
     color: #53443D;
 }
 
+/* Figure */
 .feature-figure{
     text-align: center;
 }
@@ -104,6 +151,7 @@ p{
     text-align: center;
 }
 
+/* Formulario de contacto */
 .contact-form label{
     font-weight: 600;
     color: #53443D;
@@ -130,11 +178,21 @@ p{
     color: #53443D;
 }
 
-
+/* Footer */
 .site-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 30px 20px;
     background-color: #53443D;
     color: #F1EFE6;
-    text-align: center;
+}
+
+.social-links{
+    display: flex;
+    gap: 1rem;
 }
 
 .social-links a{
