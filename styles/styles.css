@@ -88,7 +88,7 @@ p{
 }
 
 .site-navbar .navbar-brand:active{
-    color: #7a9cb3;
+    color: #F1EFE6;
     transform: translateY(1px);
 }
 
@@ -118,13 +118,13 @@ p{
 }
 
 .site-navbar .nav-link:active{
-    color: #7a9cb3;
+    color: #F1EFE6;
     transform: translateY(1px);
 }
 
 .site-navbar .nav-link:active{
     color: #DCCFB8;
-    border-bottom-color: #AD7556;
+    border-bottom-color: #F1EFE6;
 }
 
 /* Botón hamburguesa */
@@ -238,11 +238,30 @@ p{
     --bs-card-border-color: #DCCFB8;
     --bs-card-border-radius: 0.75rem;
     background-color: #F1EFE6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-body{
+    --bs-card-spacer-y: 20px;
+    --bs-card-spacer-x: 20px;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-body .btn{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.card .feature-figure img{
+    display: block;
+}
+
+.card .feature-figure img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 .card:hover .card:focus-within{
@@ -277,7 +296,7 @@ p{
 .feature-figure figcaption{
     font-style: italic;
     font-size: 0.9rem;
-    color: #AD7556;
+    color: #8A5A3C;
     text-align: center;
 }
 
@@ -316,8 +335,8 @@ p{
     --bs-btn-hover-bg: #DCCFB8;
     --bs-btn-hover-border-color: #53443D;
     --bs-btn-active-color: #F1EFE6;
-    --bs-btn-active-bg: #AD7556;
-    --bs-btn-active-border-color: #AD7556;
+    --bs-btn-active-bg: #8A5A3C;
+    --bs-btn-active-border-color: #8A5A3C;
     --bs-btn-focus-shadow-rgb: 173, 117, 86;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
@@ -336,8 +355,8 @@ p{
     --bs-btn-hover-bg: #53443D;
     --bs-btn-hover-border-color: #53443D;
     --bs-btn-active-color: #F1EFE6;
-    --bs-btn-active-bg: #AD7556;
-    --bs-btn-active-border-color: #AD7556;
+    --bs-btn-active-bg: #8A5A3C;
+    --bs-btn-active-border-color: #8A5A3C;
     --bs-btn-focus-shadow-rgb: 173, 117, 86;
 }
 
@@ -515,7 +534,7 @@ p{
 }
 
 .social-links a:active{
-    color: #7a9cb3;
+    color: #F1EFE6;
     transform: translateY(0);
 }
 
