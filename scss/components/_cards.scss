@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.card{
+    --bs-card-border-color: #{$color-borde};
+    --bs-card-border-radius: #{$radio-medio};
+    background-color: $color-fondo;
+    transition: transform $t-media ease, box-shadow $t-media ease, border-color $t-media ease;
+
+    &:hover, &:focus-within{
+        transform: translateY(-4px);
+        border-color: $color-acento;
+        box-shadow: $sombra-elevada;
+    }
+
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: $sombra-presionado;
+    }
+
+    h3{
+        color: $color-acento;
+    }
+
+    ul li{
+        color: $color-texto;
+    }
+}
+
+.card-body{
+    --bs-card-spacer-y: #{$padding-caja};
+    --bs-card-spacer-x: #{$padding-caja};
+    @include flex-columna($gap-chico);
+
+    .btn{
+        align-self: flex-start;
+        margin-top: auto;
+    }
+}

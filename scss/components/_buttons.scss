@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+
+.btn, .btn-primary{
+    --bs-btn-color: #{$color-muslin};
+    --bs-btn-bg: #{$color-clove};
+    --bs-btn-border-color: #{$color-clove};
+    --bs-btn-font-weight: #{$negrita};
+    --bs-btn-hover-color: #{$color-clove};
+    --bs-btn-hover-bg: #{$color-sandstone};
+    --bs-btn-hover-border-color: #{$color-clove};
+    --bs-btn-active-color: #{$color-muslin};
+    --bs-btn-active-bg: #{$color-acento-oscuro};
+    --bs-btn-active-border-color: #{$color-acento-oscuro};
+    --bs-btn-focus-shadow-rgb: #{$terracotta-rgb};
+    font-family: $fuente-base;
+    cursor: pointer;
+    transition: color $t-normal ease, background-color $t-normal ease, border-color $t-normal ease, transform $t-rapida ease;
+
+    &:active{
+        transform: scale(0.97);
+    }
+}
+
+.btn-secondary{
+    --bs-btn-color: #{$color-clove};
+    --bs-btn-bg: #{$color-sandstone};
+    --bs-btn-border-color: #{$color-sandstone};
+    --bs-btn-hover-color: #{$color-muslin};
+    --bs-btn-hover-bg: #{$color-clove};
+    --bs-btn-hover-border-color: #{$color-clove};
+    --bs-btn-active-color: #{$color-muslin};
+    --bs-btn-active-bg: #{$color-acento-oscuro};
+    --bs-btn-active-border-color: #{$color-acento-oscuro};
+    --bs-btn-focus-shadow-rgb: #{$terracotta-rgb};
+}

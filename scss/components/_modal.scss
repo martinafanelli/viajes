@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+
+.mmodal-content{
+    background-color: $color-fondo;
+    color: $color-texto;
+    border: 1px solid $color-borde;
+}
+
+.modal-header, .modal-footer{
+    border-color: $color-borde;
+}
+
+.modal-title{
+    font-family: $fuente-titulos;
+    font-weight: $negrita;
+    color: $color-texto;
+}
+
+.modal .btn-close{
+    transition: transform $t-normal ease, opacity $t-normal ease;
+
+    &:hover{
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+
+    &:focus{
+        box-shadow: 0 0 0 3px rgba($color-terracotta, 0.5);
+    }
+}
