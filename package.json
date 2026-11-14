@@ -1,0 +1,20 @@
+{
+  "name": "viajes",
+  "version": "1.0.0",
+  "description": "Sitio web de una agencia de viajes, desarrollado como proyecto del curso de desarrollo web.",
+  "homepage": "https://github.com/martinafanelli/viajes#readme",
+  "bugs": {
+    "url": "https://github.com/martinafanelli/viajes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinafanelli/viajes.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
