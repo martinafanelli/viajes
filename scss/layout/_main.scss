@@ -1,0 +1,55 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.site-main{
+    max-width: $ancho-main;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap-seccion;
+    padding: 30px 20px;
+
+    @include desde($bp-desktop){
+        max-width: $ancho-main-desktop;
+        gap: 2rem;
+    }
+}
+
+@each $area in hero, about, benefits, featured, intro, cancun, paris, bariloche{
+    .#{$area} {
+        grid-area: $area;
+    }
+}
+
+// Paginad de inicio
+.layout-home{
+    grid-template-areas: 
+        "hero"
+        "about"
+        "benefits"
+        "featured";
+    
+    @include desde($bp-desktop){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "hero  hero"
+            "about benefits"
+            "featured  featured";
+    }
+}
+
+// Pagina de destinos
+.layout-destinos{
+    grid-template-areas: 
+        "intro"
+        "cancun"
+        "paris"
+        "bariloche";
+    
+    @include desde($bp-desktop){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "intro  intro   intro"
+            "cancun paris   bariloche";
+    }
+}
