@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+.hero{
+    text-align: center;
+    background-color: $color-fondo;
+    padding: $padding-caja;
+
+    h2{
+        color: $color-acento;
+    }
+}

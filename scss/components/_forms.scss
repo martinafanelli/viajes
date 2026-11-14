@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+
+.contact-form{
+    label{
+        font-weight: $medio;
+        color: $color-texto;
+    }
+
+    input, textarea{
+        font-family: $fuente-base;
+        font-size: $tamano-base;
+        background-color: $color-fondo;
+        color: $color-texto;
+        border: 1px solid $color-borde;
+        border-radius: $radio-chico;
+        padding: 0.5rem 0.75rem;
+        max-width: 100%;
+        transition: border-color $t-normal ease, box-shadow $t-normal ease, background-color $t-normal ease;
+
+        &:hover{
+            background-color: $color-acento;
+        }
+
+        &:focus{
+            outline: none;
+            border-color: $color-acento;
+            background-color: $color-blanco;
+            box-shadow: 0 0 0 3px rgba($color-terracotta, 0.35);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.benefits-list{
+    @include flex-columna($gap-chico);
+
+    li{
+        background-color: $color-borde;
+        color: $color-texto;
+        font-weight: $medio;
+        padding: $padding-caja;
+    }
+}

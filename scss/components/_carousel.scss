@@ -1,0 +1,77 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.gallery-carousel{
+    border: 1px solid $color-borde;
+    border-radius: $radio-medio;
+    overflow: hidden;
+    transition: box-shadow $t-media ease, border-color $t-media ease;
+
+    &:hover{
+        border-color: $color-acento;
+        box-shadow: $sombra-elevada;
+    }
+
+    .carousel-item img{
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        left: 8%;
+        right: 8%;
+        bottom: 3rem;
+        padding: 0.4rem 0.75rem;
+        background-color: rgba($color-clove, 0.8);
+        border-radius: $radio-chico;
+
+        p{
+            color: $color-muslin;
+            font-size: 0.95rem;
+        }
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        transition: background-color $t-media ease, opacity $t-media ease;
+
+        &:hover{
+            background-color: rgba($color-clove, 0.45);
+            opacity: 1;
+        }
+
+        &:focus{
+            @include foco($color-sandstone, 2px, -4px);
+            opacity: 1;
+        }
+
+        &:active{
+            background-color: rgba($color-terracotta, 0.6);
+        }
+    }
+
+    .carousel-indicators{
+        [data-bs-target] {
+            background-color: $color-muslin;
+            transition: opacity $t-media ease, transform $t-media ease, background-color $t-media ease;
+
+            &:hover{
+                transform: scale(1.4);
+                opacity: 1;
+            }
+
+            &:focus{
+                @include foco;
+            }
+
+            &:active{
+                background-color: $color-acento;
+            }
+        }
+
+        .active{
+            background-color: $color-acento;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.site-footer{
+    @include flex-columna($gap-medio);
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: $color-fondo-oscuro;
+    color: $color-texto-claro;
+}
+
+.social-links{
+    display: flex;
+    gap: $gap-grande;
+
+    a{
+        display: inline-block;
+        color: $color-sandstone;
+        font-weight: $medio;
+        transition: color $t-normal ease, transform $t-rapida ease;
+
+        &:hover{
+            color: $color-muslin;
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        &:focus{
+            color: $color-muslin;
+            @include foco($color-sandstone, 2px, 3px);
+        }
+
+        &:active{
+            color: $color-muslin;
+            transform: translateY(0);
+        }
+    }
+}

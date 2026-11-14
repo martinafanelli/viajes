@@ -1,0 +1,73 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.site-navbar{
+    .navbar-brand{
+        font-family: $fuente-titulos;
+        font-weight: $negrita;
+        font-size: 1.8rem;
+        transition: color $t-normal ease, transform $t-normal ease;
+
+        &:hover{
+            transform: translateY(-1px);
+        }
+
+        &:active{
+            color: $color-muslin;
+            transform: translateY(1px);
+        }
+
+        &:focus{
+            @include foco($color-sandstone, 2px, 4px);
+            box-shadow: none;
+        }
+    }
+
+    // Links del menu
+    .nav.link{
+        font-weight: $medio;
+        border-bottom: 2px solid transparent;
+        transition: color $t-normal ease, border-color $t-normal ease, transform $t-rapida ease;
+
+        &:hover{
+            color: $color-sandstone;
+            border-bottom-color: $color-sandstone;
+        }
+
+        &:focus{
+            color: $color-sandstone;
+            @include foco;
+            box-shadow: none;
+        }
+
+        &:active{
+            color: $color-muslin;
+            transform: translateY(1px);
+        }
+
+        // Pagina actual
+        &.active{
+            color: $color-sandstone;
+            border-bottom-color: $color-muslin ;
+        }
+    }
+
+    // Boton hamburguesa
+    .navbar-toggler{
+        transition: background-color $t-normal ease, tranform $t-rapida ease;
+
+        &:hover{
+            background-color: rgba($color-muslin, 0.15);
+        }
+
+        &:focus{
+            @include foco;
+            box-shadow: none;
+        }
+
+        &:active{
+            background-color: rgba($color-terracotta, 0.5);
+            transform: scale(0.95);
+        }
+    }
+}

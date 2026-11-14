@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+
+.site-header{
+    background-color: $color-fondo-oscuro;
+
+    .brand{
+        margin: 0;
+        line-height: 1;
+    }
+
+    .site-navbar{
+    --bs-navbar-padding-y: #{$gap-medio};
+    --bs-navbar-color: #{$color-muslin};
+    --bs-navbar-hover-color: #{$color-sandstone};
+    --bs-navbar-active-color: #{$color-sandstone};
+    --bs-navbar-brand-color: #{$color-muslin};
+    --bs-navbar-brand-hover-color: #{$color-sandstone};
+    --bs-navbar-toggler-border-color: #{rgba($color-muslin, 0.5)};
+    }
+}

@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.feature-figure{
+    text-align: center;
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption{
+        font-style: italic;
+        font-size: $tamano-chico;
+        color: $color-acento-oscuro;
+        text-align: center;
+    }
+
+    a{
+        display: inline-block;
+        overflow: hidden;
+        border-radius: $radio-chico;
+
+        img{
+            display: block;
+            transition: transform $t-lenta ease, filter $t-lenta ease;
+        }
+
+        &:hover img{
+            transform: scale(1.05);
+            filter: brightness(1.05);
+        }
+
+        &:focus{
+            @include foco($color-acento, 3px, 3px)
+        }
+
+        &:active img{
+            transform: scale(1.01);
+        }        
+    }    
+}
+
+.card .feature-figure img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
