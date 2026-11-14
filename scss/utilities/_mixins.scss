@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+// Media query mobile-first
+@mixin desde($ancho) {
+    @media (min-width: $ancho) {
+        @content;
+    }
+}
+
+// Elementos apilados en columnas 
+@mixin flex-columna($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+// Contorno visible para el estado :focus
+@mixin foco($color: $color-sandstone, $ancho: 2px, $desfase: 2px) {
+    outline: $ancho solid $color;
+    outline-offset: $desfase;
+}

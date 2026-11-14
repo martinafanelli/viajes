@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+
+h1,
+h2,
+h3{
+    font-family: $fuente-titulos;
+    font-weight: $negrita;
+    line-height: 1.3;
+    color: $color-texto;
+}
+
+h1{
+    font-size: $tamano-h1;
+}
+
+h2{
+    font-size: $tamano-h2;
+}
+
+h3{
+    font-size: $tamano-h3;
+    color: $color-acento;
+}
+
+p{
+    font-family: $fuente-base;
+    font-weight: $normal;
+    font-size: $tamano-base;
+}

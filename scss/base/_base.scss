@@ -1,0 +1,38 @@
+@use "../utilities/variables" as *;
+
+// Reset universal
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Dejo algunos elementos como estaban antes
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+figure{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: $fuente-base;
+    font-weight: $normal;
+    font-size: $tamano-base;
+    line-height: $interlineado;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+a{
+    color: $color-texto;
+    text-decoration: none;
+}

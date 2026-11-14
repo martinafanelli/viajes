@@ -1,0 +1,61 @@
+// Paleta de colores
+$color-chambray: #7A9CB3;
+$color-terracotta: #AD7556;
+$color-terracotta-oscuro: #8A5A3C;
+$color-sandstone: #DCCFB8;
+$color-muslin: #F1EFE6;
+$color-clove: #53443D;
+$color-blanco: #FFFFFF;
+
+$terracotta-rgb: 173, 117, 86;
+
+// Colores según su uso
+$color-fondo: $color-muslin;
+$color-texto: $color-clove;
+$color-acento: $color-terracotta;
+$color-acento-oscuro: $color-terracotta-oscuro;
+$color-borde: $color-sandstone;
+$color-fondo-oscuro: $color-clove;
+$color-texto-claro: $color-muslin;
+
+// Tipografía
+$fuente-base: 'Poppins', sans-serif;
+$fuente-titulos: 'Playfair', serif;
+
+$tamano-base: 1rem;
+$tamano-h1: 2.2rem;
+$tamano-h2: 1.7rem;
+$tamano-h3: 1.25rem;
+$tamano-chico: 0.9rem;
+$interlineado: 1.6;
+
+$normal: 400;
+$medio: 600;
+$negrita: 700;
+
+// Espaciado y bordes
+$gap-chico: 0.75rem;
+$gap-medio: 1rem;
+$gap-grande: 1.5rem;
+$gap-seccion: 2.5rem;
+$padding-caja: 20px;
+$radio-chico: 0.5rem;
+$radio-medio: 0.75rem;
+
+// Layout
+$ancho-main: 960px;
+$ancho-main-desktop: 1100px;
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
+// Transiciones
+$t-rapida: 0.15s;
+$t-normal: 0.25s;
+$t-media: 0.3s;
+$t-lenta: 0.4s;
+
+// Sombras
+$sombra-elevada: 0 0.5rem 1rem rgba($color-clove, 0.2);
+$sombra-presionado: 0 0.25rem 0.5rem rgba($color-clove, 0.2);
